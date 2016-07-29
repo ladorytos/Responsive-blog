@@ -1,5 +1,3 @@
-/* Inserta tu codigo aqui */
-
 header, footer {
 	background-color: #1c1821;
 }
@@ -9,7 +7,6 @@ li {
 	font-family: "Open sans";
 	font-style: italic;
 	padding: 10px 5px;
-
 }
 nav ul {	
 	float: right;
@@ -21,6 +18,9 @@ nav a {
 	text-decoration: none;
 	padding: 10px 5px;
 	color: white;
+}
+ a:hover {
+	color: #f6ba6d;
 }
 .spring, .floral, .flatness, .text {
 	background-color: #2d2735;
@@ -34,7 +34,6 @@ nav a {
 	padding-bottom: 30px;
 	background-size: cover;	
 }
-
 .spring_come, .about_me, .amanda{
 	background-color: #1b1821;
 }
@@ -50,6 +49,7 @@ nav a {
 	font-size: 50px;
 }
 .spring_come ul{
+	margin-left: 100px;
 	color: white;
 	padding-left: 100px;
 	font-size: 12px;
@@ -63,13 +63,13 @@ nav a {
 	color: #f6ba6d;
 	font-family: "Courgette", serif;
 	text-align: center;
+	padding: 5px;
 }
 p{
 	color: white;
 	font-family: "Open Sans";
 	font-size: 12px;
-	padding: 5px 5px 15px 5px;
-	padding-left: 5px;
+	padding: 5px 10px 15px 10px;
 }
 .flatness{
 	padding-bottom: 25px;
@@ -82,10 +82,12 @@ p{
 }
 .flowers h5, h6{
 	line-height:25px;
-	
 }
 .flowers p{
 	text-align: left;	
+}
+.img2{
+	margin-top:1px;
 }
 .img3, .img4{
 	max-width: 100%;
@@ -121,9 +123,17 @@ h6{
 .img4{
 	padding-top: 5px;
 }
+.icons{
+	text-align: center;
+}
 .fa{
 	color: white; 
-	font-size: 15px; 
+	font-size: 20px; 
+	padding: 5px;
+	padding-bottom: 15px;	
+}
+.fa:hover{
+	font-size: 30px; 
 	padding: 5px;
 	padding-bottom: 15px;	
 }
@@ -137,27 +147,22 @@ footer p{
 
 /* Responsive }*/
 
-@media screen and (max-width : 920px) {
-
-}
-
 @media (max-width: 660px) {
 	.container{
 		width: 100%;
 	}
+	nav a {
+		padding: 10px 0px;
+		font-size: 12px;
+	}
 	.spring_come{
 		margin: 0;
 	}
-	.spring_come li{
-		padding: 0;
+	.spring_come ul{
+		margin-left: -50px;
 	}
-
-	.col-4{
+	.col-4, .col-5, .col-7, .col-8, .col-12{
 		width:100%;
+		margin-left: 10px;
 	}
-	.col-8 {
-    margin-left: 0;
-	}
-	.col-7, .col-5 {
-		width: 100%;
 }
